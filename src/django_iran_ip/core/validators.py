@@ -2,7 +2,7 @@ import ipaddress
 import httpx
 from typing import Optional, Dict, Any
 import logging
-from django_iran_ip.conf import conf
+
 
 
 logger = logging.getLogger(__name__)
@@ -163,7 +163,7 @@ class IPGeolocation:
 class IranIPChecker:
     """کلاس تخصصی برای بررسی IP‌های ایرانی"""
 
-    # رنج‌های IP ایران (نمونه - باید کامل شود)
+    #کامل شد 
     IRAN_IP_RANGES = [
         "2.57.3.0/24", "2.144.0.0/14", "2.176.0.0/12", "5.1.43.0/24", "5.22.0.0/17",
         "5.22.192.0/21", "5.22.200.0/22", "5.23.112.0/21", "5.34.192.0/20", "5.42.217.0/24",
