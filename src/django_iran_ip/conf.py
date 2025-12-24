@@ -110,18 +110,7 @@ class IranIPConfig:
         ]
         return getattr(settings, 'IRAN_IP_IRAN_IP_RANGES', default_ranges)
     
-
-    #new feature anti-spoofing-security
-    @property
-    def TRUSTED_PROXIES(self) -> List[str]:
-        return getattr(settings, 'IRAN_IP_TRUSTED_PROXIES', [])
     
-
-    @property
-    def TRUST_PRIVATE_IP(self) -> bool:
-        return getattr(settings, 'IRAN_IP_TRUST_PRIVATE_IP', False)
-    
-
 
     def get_config_dict(self) -> Dict[str, Any]:
 

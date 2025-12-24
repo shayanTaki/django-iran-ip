@@ -2,6 +2,8 @@ import ipaddress
 import httpx
 from typing import Optional, Dict, Any
 import logging
+from django_iran_ip.conf import conf
+
 
 logger = logging.getLogger(__name__)
 
@@ -63,6 +65,8 @@ class IPValidator:
                 return "public"
         except ValueError:
             return "invalid"
+    
+    
 
 
 
