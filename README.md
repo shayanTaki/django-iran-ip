@@ -128,6 +128,16 @@ IRAN_IP_HEADER_PRIORITY = [
     'REMOTE_ADDR',
 ]
 ```
+## 🛡️ امنیت و جلوگیری از جعل IP (Anti-Spoofing)
+
+از نسخه `0.2.0`، این پکیج به مکانیزم پیشرفته **Chain of Trust** مجهز شده است تا از حملات جعل IP (IP Spoofing) جلوگیری کند.
+
+- ✅ تشخیص هوشمند IP واقعی حتی در پشت Cloudflare، ArvanCloud و Load Balancerها.
+- ✅ قابلیت تعریف `TRUSTED_PROXIES` برای امنیت حداکثری.
+- ✅ الگوریتم **Right-to-Left** برای نادیده گرفتن هدرهای جعلی (`X-Forwarded-For`).
+
+📖 **[برای مطالعه مستندات کامل امنیتی و نحوه پیکربندی، اینجا کلیک کنید](docs/SPOOFING_DETECTION.md)**
+
 
 ## استفاده پیشرفته
 

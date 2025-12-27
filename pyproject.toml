@@ -1,6 +1,6 @@
 [project]
 name = "django-iran-ip"
-version = "0.1.0"
+version = "0.2.0"
 description = "A professional Django package for IP detection with Iran network support"
 authors = [
     {name = "shayan taki",email = "takishayan@icloud.com"}
